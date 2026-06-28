@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Garfield Shop</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+body:before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:#60a5fa55;
+border-radius:50%;
+filter:blur(120px);
+top:-150px;
+left:-100px;
+}
+
+.card{
+width:360px;
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.2);
+border-radius:30px;
+padding:25px;
+box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+h1{
+text-align:center;
+color:white;
+margin-bottom:20px;
+font-size:28px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+button{
+height:70px;
+border:none;
+border-radius:18px;
+color:white;
+font-size:17px;
+cursor:pointer;
+transition:.3s;
+font-weight:bold;
+backdrop-filter:blur(20px);
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.star{
+background:#f59e0b;
+}
+
+.view{
+background:#3b82f6;
+}
+
+.number{
+background:#10b981;
+}
+
+.gift{
+background:#ec4899;
+}
+
+.wallet{
+background:#8b5cf6;
+}
+
+.premium{
+background:#ef4444;
+}
+
+.support{
+background:#06b6d4;
+}
+
+.boost{
+background:#f97316;
+}
+
+.footer{
+margin-top:20px;
+text-align:center;
+color:white;
+opacity:.8;
+font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🚀 Garfield Shop</h1>
+
+<div class="grid">
+
+<button class="star">⭐ استار</button>
+
+<button class="view">👁 ویو</button>
+
+<button class="number">📱 شماره</button>
+
+<button class="gift">🎁 گیفت</button>
+
+<button class="wallet">💰 کیف پول</button>
+
+<button class="premium">🌟 پرمیوم</button>
+
+<button class="boost">🚀 بوست</button>
+
+<button class="support">🛠 پشتیبانی</button>
+
+</div>
+
+<div class="footer">
+Garfield Telegram Shop
+</div>
+
+</div>
+
+</body>
+</html>
