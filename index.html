@@ -2,184 +2,71 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Telegram Shop</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Telegram Panel</title>
+<link rel="stylesheet" href="style.css">
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:tahoma;
-}
-
-body{
-
-background:#0b1020;
-color:#fff;
-padding:16px;
-
-}
-
-.header{
-
-background:linear-gradient(135deg,#00b0ff,#0066ff);
-
-padding:20px;
-
-border-radius:20px;
-
-margin-bottom:18px;
-
-box-shadow:0 0 20px rgba(0,120,255,.35);
-
-}
-
-.header h2{
-
-font-size:22px;
-
-}
-
-.wallet{
-
-margin-top:10px;
-
-opacity:.9;
-
-}
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:14px;
-
-}
-
-.card{
-
-background:#182235;
-
-border-radius:18px;
-
-padding:18px;
-
-text-align:center;
-
-cursor:pointer;
-
-transition:.2s;
-
-}
-
-.card:active{
-
-transform:scale(.96);
-
-}
-
-.icon{
-
-font-size:34px;
-
-margin-bottom:8px;
-
-}
-
-.title{
-
-font-size:15px;
-
-font-weight:bold;
-
-}
-
-</style>
-
 </head>
-
 <body>
 
-<div class="header">
+<div class="container">
 
-<h2>🚀 فروشگاه تلگرام</h2>
+<div class="card green">
+🛒 خرید محصول
+</div>
 
-<div class="wallet">
-💰 موجودی کیف پول: ۰ تومان
+<div class="row">
+
+<div class="card blue">
+👤<br>حساب کاربری
+</div>
+
+<div class="card blue">
+💰<br>کیف پول
+</div>
+
+</div><div class="card red">
+⭐ استارز
+</div>
+
+<div class="row">
+
+<div class="card blue">
+👁<br>ویو
+</div>
+
+<div class="card blue">
+🚀<br>بوست
 </div>
 
 </div>
 
-<div class="grid">
-<div class="card" id="stars">
-<div class="icon">⭐</div>
-<div class="title">استارز</div>
+<div class="card red">
+🎁 گیفت تلگرام
 </div>
 
-<div class="card" id="views">
-<div class="icon">👁</div>
-<div class="title">ویو</div>
+<div class="row">
+
+<div class="card blue">
+📞<br>پشتیبانی
 </div>
 
-<div class="card" id="gift">
-<div class="icon">🎁</div>
-<div class="title">گیفت تلگرام</div>
+<div class="card blue">
+⚙️<br>تنظیمات
 </div>
 
-<div class="card" id="boost">
-<div class="icon">🚀</div>
-<div class="title">بوست</div>
-</div>
-
-<div class="card" id="wallet">
-<div class="icon">💰</div>
-<div class="title">کیف پول</div>
-</div>
-
-<div class="card" id="support">
-<div class="icon">🛠</div>
-<div class="title">پشتیبانی</div>
 </div>
 
 </div>
 
 <script>
 
-const tg=window.Telegram.WebApp;
+Telegram.WebApp.ready();
 
-tg.expand();
-
-document.getElementById("stars").onclick=()=>{
-alert("صفحه استارز");
-};
-
-document.getElementById("views").onclick=()=>{
-alert("صفحه ویو");
-};
-
-document.getElementById("gift").onclick=()=>{
-alert("صفحه گیفت");
-};
-
-document.getElementById("boost").onclick=()=>{
-alert("صفحه بوست");
-};
-
-document.getElementById("wallet").onclick=()=>{
-alert("کیف پول");
-};
-
-document.getElementById("support").onclick=()=>{
-alert("پشتیبانی");
-};
+Telegram.WebApp.expand();
 
 </script>
 
 </body>
+
 </html>
